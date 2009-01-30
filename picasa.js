@@ -50,6 +50,7 @@ $.fn.getPicasa.text = {
   loading:"loading...",
   enter:"Enter",
   insert:"Insert",
+  backtoalbum:"Back to Album List",
   insertall:"Insert All Selected Images: ",
   selectc:"Select: ",
   insertc:"Insert: "
@@ -99,7 +100,7 @@ function formatPicasaAlbum(json){
 
 function formatPicasa(json){
   obj.html("");
-  $("<span>Back to Album List</span>").appendTo(obj).click(function(){
+  $("<span>" + $.fn.getPicasa.text.backtoalbum + "</span>").appendTo(obj).click(function(){
     obj.getPicasa({username:options.username});
   });
   size = options.picinsertsize;
