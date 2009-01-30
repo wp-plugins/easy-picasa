@@ -1,6 +1,6 @@
 === Plugin Name ===
 Contributors: YiXia
-Tags: picasa
+Tags: picasa,gallery,album,images,photos
 Requires at least: 2.5
 Tested up to: 2.7
 Stable tag: trunk

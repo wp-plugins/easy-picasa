@@ -3,7 +3,7 @@
 Plugin Name: Easy Picasa
 Plugin URI: http://e-xia.com/plugins/easy-picasa/
 Description: An simple but useful insert picasa plugin, can insert flash album, picture, multiple pictures. Extra light, based on jQuery only.
-Version: 1.0
+Version: 1.1
 Author: YiXia
 Author URI: http://e-xia.com/
 */

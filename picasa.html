@@ -55,8 +55,11 @@ jQuery(document).ready(function($){
     });
     $("#go").click(function(){
       user = userinput.val();
-      if(user)
-        document.cookie = ("wppicasauser" + '=' + encodeURIComponent(user));
+      if(user){
+        var expires = new Date();
+        expires.setTime(expires.getTime() + 365 * 24 * 60 * 60 * 1000);
+        document.cookie = ('wppicasauser=' + encodeURIComponent(user) + ';expires=' + expires.toGMTString());
+      }
       $('#picasa').getPicasa({
         username:user
       });
